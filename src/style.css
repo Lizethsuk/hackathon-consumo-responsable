@@ -30,6 +30,16 @@ bottom: 0;
 height: 100%;
 width: 100%;
 }
+#box6 {
+      
+    display: table;
+  position: absolute;
+  background-color: rgba(0, 1, 1, 0.6);
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  }
 #box2 {
   height: 70vh;
   width: 100%;
@@ -42,7 +52,7 @@ width: 100%;
 }
 
 #box3 {
-  height: 70vh;
+  height: 60vh;
   width: 100%;
  
 }
@@ -185,11 +195,11 @@ background-color:#D5F946 }
 
 .scroll {
   overflow: scroll; 
-  width: 85%;
-  height: 330px;
+  width: 130%;
+  height: 400px;
 }
 
-#box1 {
+#box5 {
   height: 50vh;
   width: 100%;
   background-image: url("../src/image/architecture-bar-bookcase.png");

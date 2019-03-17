@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+    <link rel="stylesheet" type="text/css" media="screen" href="map.css" />
 
   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
@@ -80,10 +81,7 @@
                         aria-selected="false">Lugares de acopio</a></button>
     
                   </div>
-                  <div class="col-md-6 rowBtn pt-5">
-                    <button class="btn btn-warning">hol</button>
-    
-                  </div>
+                  
                 </div>
               </div>
     
@@ -109,7 +107,7 @@
                   </button>
                 </div>
                 <div class="col-4">
-                  <img src="./Group (1).png" class="divImg">
+                  <img src="../src/image/Group (1).png" class="divImg">
                 </div>
     
               </div>
@@ -141,23 +139,11 @@
 
           <div class="row d-flex justify-content-around botones ">
 
-            <div class="p-2"><button type="button" class="btn  tipos btn1 "><i class="fas fa-apple-alt"></i>
-                <br>Alimentos </button></div>
-            <div class="p-2"><button type="button" class="btn btn-danger tipos btn2"><i
-                  class="fas fa-weight-hanging"></i><br>Moda</button></div>
-            <div class="p-2"><button type="button" class="btn btn-warning tipos btn3"><i class="fas fa-apple-alt"></i>
-                <br>Cosmeticos </button></div>
-            <div class="p-2"><button type="button" class="btn btn-primary tipos btn4"><i
-                  class="fas fa-plane-departure"></i>
-                <br>Ecoturismo </button></div>
-            <div class="p-2"><button type="button" class="btn btn-warning tipos btn5"><i class="fas fa-sync-alt"></i>
-                <br>Otros recursos </button></div>
-          </div>
+           
 
         </div>
         <div class="container pb-10">
-          <h4 class="p-5">1.Selecciona una categoria </h4>
-          <div class="col-10">
+          <div class="col-12">
       
             <div class="row d-flex justify-content-around botones " id='category'>
               
@@ -201,7 +187,18 @@
          </div>
       </div>
     </div>
-    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+ 
+  </div>  
+    <div class="tab-pane fade " id="nav-lugares" role="tabpanel" aria-labelledby="nav-lugares-tab">
+        <section class="conatiner-fluid home d-flex justify-content-center align-items-center flex-column text-white">
+            <h3 class="my-4">Puntos de reciclaje</h3>
+            <span>Conoce la lista actualizada</span>      
+          </section>
+          <section class="row p-0 m-0">    
+            <iframe frameborder="0" id="map" class="w-100 h-100 h-md-50 m-3" allowfullscreen></iframe>
+          </section>
+    </div>
+     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
       <div class="container-fluid" id="">
         <div class="row">
           <div class="col colIniciativas">
@@ -226,7 +223,9 @@
                 </div>
                 <div class="col-md-6">
                   <img src="./image/detalle.png" class="ml-3" alt="..." width="220px" height="182px" />
-                  <button>Conoce más</button>
+                  <a href="http://piap.msb.gob.pe/webbici/separa-tu-bici.html" target_blank>
+                    <img src="./image/emblemsymboliclink_93507.png"  alt="">
+                  </a>
                 </div>
               </div>
             </div>
@@ -246,7 +245,10 @@
                 </div>
                 <div class="col-md-6">
                   <img src="./image/San-Isidro-Recicla.png" class="ml-3" alt="..." width="220px" height="182px" />
-                  <button>Conoce más</button>
+                  <a href="http://msi.gob.pe/portal/san-isidro-recicla/" target_blank>
+                    <img src="./image/emblemsymboliclink_93507.png" alt="">
+                  </a>
+
                 </div>
               </div>
 
@@ -257,16 +259,16 @@
             <div class="media cardIni">
               <div class="col-md-6">
                 <div class="media-body">
-                  <h5 class="mt-0 mb-1">San Borja en Bici</h5>
-                  San Borja en Bici es un programa pensado para ti. Para
-                  acercarte y conectarte con tu comunidad y vecinos sin
-                  necesidad de sacar el auto o tomar un bus. Podrás hacer
-                  compras o pagos, conectarte de un paradero a otro...
+                  <h5 class="mt-0 mb-1">Basura que no es basura</h5>
+                  Es un programa de la Municipalidad de Miraflores que busca mejorar la calidad de vida del distrito fomentando una cultura de compromiso ambiental a través del reciclaje. Para llevarlo a cabo se necesita la participación activa de los
+                   vecinos y además el apoyo de voluntarios, los cuales ayudan en el proceso de sensibilización casa por casa y tienen un trato directo con los vecinos.
                 </div>
               </div>
               <div class="col-md-6">
-                <img src="./image/detalle.png" class="ml-3" alt="..." width="220px" height="182px" />
-                <button>Conoce más</button>
+                <img src="http://blogs.miraflores.gob.pe/larco400/wp-content/uploads/2014/08/logo.jpg" class="ml-3" alt="..." width="220px" height="182px" />
+                <a href="https://www.google.com/maps/d/u/0/viewer?mid=1F3iQ_U62gIA3J3baVbFJn-wZFmo&ll=-12.120187257322902%2C-77.02760875000001&z=14" target_blank>
+                  <img src="./image/emblemsymboliclink_93507.png" alt="">
+                </a>
               </div>
 
             </div>
@@ -285,14 +287,15 @@
               </div>
               <div class="col-md-6">
                 <img src="./image/San-Isidro-Recicla.png" class="ml-3" alt="..." width="220px" height="182px" />
-                <button>Conoce más</button>
+                <a href="" target_blank>
+                  <img src="./image/emblemsymboliclink_93507.png" alt="">
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -310,5 +313,6 @@
     ></script>
     <script src="app.js"></script>
     <script src="main.js"></script>
+    <script src="map.js"></script>
   </body>
 </html>
